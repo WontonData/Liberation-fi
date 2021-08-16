@@ -1,0 +1,9 @@
+{
+  "language": "",
+  "main": "./contracts/UserProxy.sol",
+  "deploy": "./build/contracts/UserProxy.json",
+  "compilers": {
+    "cfxtruffle": "1.0.2",
+    "solc": "0.8.0"
+  }
+}
