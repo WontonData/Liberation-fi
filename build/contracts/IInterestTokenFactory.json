@@ -36,7 +36,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tranche\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"strategySymbol\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"expiration\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"underlyingDecimals\",\"type\":\"uint8\"}],\"name\":\"deployInterestToken\",\"outputs\":[{\"internalType\":\"contract InterestToken\",\"name\":\"interestToken\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IInterestTokenFactory.sol\":\"IInterestTokenFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/d/Code/Conflux-UMA/element-demo/contracts/InterestToken.sol\":{\"keccak256\":\"0x48ad2537734dc8c9cde448a82ae788cb787dbcfa915c13e5140c5a6425fa148e\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://4a89dd664bc97d7bc4b250b49a19c6cad943d5a074c24ef05a0ff194c671fd96\",\"dweb:/ipfs/QmScfa2BC9gyoKBdztukYRMQcbZUv1oiLYvHXgmxsfjx78\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IERC20.sol\":{\"keccak256\":\"0x1745f14ec0297036e063365f7e0f4a9a4c6e266e2afc1d44f14a4c1ea44cb6b9\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://95156ccbd58489790ef30d42713c5001566826144b6eed1458e3bb295913df80\",\"dweb:/ipfs/QmdLeJLEdXU5SZetJUYRd1UMoQ3JD64xphXVuHQBKWuiwk\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IERC20Permit.sol\":{\"keccak256\":\"0xe6b43bf550aa9a07d9d3ff23f2976e7ec9e75766f45c8b3d69218606796723d5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0a638f4bc0371354f7d71e907ac5732af693c7f946a2abb8736f9c1dfd80de87\",\"dweb:/ipfs/QmSGcJoVwdqpp1uaCTHyEGBqfVgDRwXpZzt3uWTFj5EWfk\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IInterestToken.sol\":{\"keccak256\":\"0xb27342c8032ee0758e2653cbfb0b9069aee9e34088374c588bd86b77a4dca673\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://99357565cac925ed8a9f83d71cce2611a1293f115be2a6c5d4e17f8195fab5ff\",\"dweb:/ipfs/QmbzEX2RY6PtARBZUKQJCfUUtPZEzhRtjThVMWBTETHSBy\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IInterestTokenFactory.sol\":{\"keccak256\":\"0xbdd648b436b51885af966c6db2c604bdf33cc172347406ab2e3d11188760fe98\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://f1c6a827f5ef973b65895cd9dbb78ab4ed2f5edd5b050759268b7645db1d71a0\",\"dweb:/ipfs/QmTA7xj71DbyzEQjysnZnT2Z4vvVCjEJ5NfhZSpL88fjpd\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/interfaces/ITranche.sol\":{\"keccak256\":\"0xd595cf097b22f9229defdffbf6b3b1b2a090cdd016fe47547891c65c3a3c2857\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://4f4939f347b5af9a8aa87d76988b200b582b911c7045855c5cf9cd9b0f5ad2ea\",\"dweb:/ipfs/QmX2CNg6veBwcchuyJCid3CxqQFdhcLq3ULXCi837S52fn\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/libraries/DateString.sol\":{\"keccak256\":\"0xc5114a856351e4c6b129f62cb2079cb496642229f6be742af096e4f9fc93a651\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://1f896f88cfcaa3d9cd7af0662389cce4d06eec0310192745fc37e4c9bd2d8271\",\"dweb:/ipfs/QmdXPBGYjxoPugJhvKZTirAMmiCBToeCsxhEcN6V39wLPr\"]},\"/d/Code/Conflux-UMA/element-demo/contracts/libraries/ERC20Permit.sol\":{\"keccak256\":\"0xa873bc3b6f233ab5c7ffdddaa2fdc545081bf1cfb3e4a1aa3e6a1390b8beed44\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://41a939d1064dd1aebe36edce6695ea8e8fece33fafbf6d2f54420a8cd50b3220\",\"dweb:/ipfs/QmVHwF7K75nJFrqyPKr3Y92vvQD4hyH2U8VbQcaHqg1hgm\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tranche\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"strategySymbol\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"expiration\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"underlyingDecimals\",\"type\":\"uint8\"}],\"name\":\"deployInterestToken\",\"outputs\":[{\"internalType\":\"contract InterestToken\",\"name\":\"interestToken\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IInterestTokenFactory.sol\":\"IInterestTokenFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/InterestToken.sol\":{\"keccak256\":\"0x48ad2537734dc8c9cde448a82ae788cb787dbcfa915c13e5140c5a6425fa148e\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://4a89dd664bc97d7bc4b250b49a19c6cad943d5a074c24ef05a0ff194c671fd96\",\"dweb:/ipfs/QmScfa2BC9gyoKBdztukYRMQcbZUv1oiLYvHXgmxsfjx78\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20.sol\":{\"keccak256\":\"0x1745f14ec0297036e063365f7e0f4a9a4c6e266e2afc1d44f14a4c1ea44cb6b9\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://95156ccbd58489790ef30d42713c5001566826144b6eed1458e3bb295913df80\",\"dweb:/ipfs/QmdLeJLEdXU5SZetJUYRd1UMoQ3JD64xphXVuHQBKWuiwk\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20Permit.sol\":{\"keccak256\":\"0xe6b43bf550aa9a07d9d3ff23f2976e7ec9e75766f45c8b3d69218606796723d5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0a638f4bc0371354f7d71e907ac5732af693c7f946a2abb8736f9c1dfd80de87\",\"dweb:/ipfs/QmSGcJoVwdqpp1uaCTHyEGBqfVgDRwXpZzt3uWTFj5EWfk\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IInterestToken.sol\":{\"keccak256\":\"0xb27342c8032ee0758e2653cbfb0b9069aee9e34088374c588bd86b77a4dca673\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://99357565cac925ed8a9f83d71cce2611a1293f115be2a6c5d4e17f8195fab5ff\",\"dweb:/ipfs/QmbzEX2RY6PtARBZUKQJCfUUtPZEzhRtjThVMWBTETHSBy\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IInterestTokenFactory.sol\":{\"keccak256\":\"0xbdd648b436b51885af966c6db2c604bdf33cc172347406ab2e3d11188760fe98\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://f1c6a827f5ef973b65895cd9dbb78ab4ed2f5edd5b050759268b7645db1d71a0\",\"dweb:/ipfs/QmTA7xj71DbyzEQjysnZnT2Z4vvVCjEJ5NfhZSpL88fjpd\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/ITranche.sol\":{\"keccak256\":\"0xd595cf097b22f9229defdffbf6b3b1b2a090cdd016fe47547891c65c3a3c2857\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://4f4939f347b5af9a8aa87d76988b200b582b911c7045855c5cf9cd9b0f5ad2ea\",\"dweb:/ipfs/QmX2CNg6veBwcchuyJCid3CxqQFdhcLq3ULXCi837S52fn\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/libraries/DateString.sol\":{\"keccak256\":\"0xc5114a856351e4c6b129f62cb2079cb496642229f6be742af096e4f9fc93a651\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://1f896f88cfcaa3d9cd7af0662389cce4d06eec0310192745fc37e4c9bd2d8271\",\"dweb:/ipfs/QmdXPBGYjxoPugJhvKZTirAMmiCBToeCsxhEcN6V39wLPr\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/libraries/ERC20Permit.sol\":{\"keccak256\":\"0xa873bc3b6f233ab5c7ffdddaa2fdc545081bf1cfb3e4a1aa3e6a1390b8beed44\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://41a939d1064dd1aebe36edce6695ea8e8fece33fafbf6d2f54420a8cd50b3220\",\"dweb:/ipfs/QmVHwF7K75nJFrqyPKr3Y92vvQD4hyH2U8VbQcaHqg1hgm\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -45,41 +45,41 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: Apache-2.0\r\npragma solidity ^0.8.0;\r\n\r\nimport \"../InterestToken.sol\";\r\n\r\ninterface IInterestTokenFactory {\r\n    function deployInterestToken(\r\n        address tranche,\r\n        string memory strategySymbol,\r\n        uint256 expiration,\r\n        uint8 underlyingDecimals\r\n    ) external returns (InterestToken interestToken);\r\n}\r\n",
-  "sourcePath": "/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IInterestTokenFactory.sol",
+  "sourcePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IInterestTokenFactory.sol",
   "ast": {
-    "absolutePath": "/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IInterestTokenFactory.sol",
+    "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IInterestTokenFactory.sol",
     "exportedSymbols": {
       "DateString": [
-        3807
+        3877
       ],
       "ERC20Permit": [
-        4245
+        4315
       ],
       "IERC20": [
-        2817
+        2850
       ],
       "IERC20Permit": [
-        2856
+        2900
       ],
       "IInterestToken": [
-        2876
+        2920
       ],
       "IInterestTokenFactory": [
-        2894
+        2938
       ],
       "ITranche": [
-        2950
+        2994
       ],
       "InterestToken": [
         166
       ]
     },
-    "id": 2895,
+    "id": 2939,
     "license": "Apache-2.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2878,
+        "id": 2922,
         "literals": [
           "solidity",
           "^",
@@ -87,16 +87,17 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "40:23:11"
+        "src": "40:23:12"
       },
       {
-        "absolutePath": "/d/Code/Conflux-UMA/element-demo/contracts/InterestToken.sol",
+        "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/InterestToken.sol",
         "file": "../InterestToken.sol",
-        "id": 2879,
+        "id": 2923,
+        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2895,
+        "scope": 2939,
         "sourceUnit": 167,
-        "src": "67:30:11",
+        "src": "67:30:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -106,33 +107,36 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 2894,
+        "id": 2938,
         "linearizedBaseContracts": [
-          2894
+          2938
         ],
         "name": "IInterestTokenFactory",
+        "nameLocation": "111:21:12",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "34bc3959",
-            "id": 2893,
+            "id": 2937,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "deployInterestToken",
+            "nameLocation": "149:19:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2888,
+              "id": 2932,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2881,
+                  "id": 2925,
                   "mutability": "mutable",
                   "name": "tranche",
+                  "nameLocation": "187:7:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "179:15:11",
+                  "scope": 2937,
+                  "src": "179:15:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -140,10 +144,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2880,
+                    "id": 2924,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "179:7:11",
+                    "src": "179:7:12",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -154,12 +158,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2883,
+                  "id": 2927,
                   "mutability": "mutable",
                   "name": "strategySymbol",
+                  "nameLocation": "219:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "205:28:11",
+                  "scope": 2937,
+                  "src": "205:28:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -167,10 +172,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2882,
+                    "id": 2926,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "205:6:11",
+                    "src": "205:6:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -180,12 +185,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2885,
+                  "id": 2929,
                   "mutability": "mutable",
                   "name": "expiration",
+                  "nameLocation": "252:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "244:18:11",
+                  "scope": 2937,
+                  "src": "244:18:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -193,10 +199,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2884,
+                    "id": 2928,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "244:7:11",
+                    "src": "244:7:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -206,12 +212,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2887,
+                  "id": 2931,
                   "mutability": "mutable",
                   "name": "underlyingDecimals",
+                  "nameLocation": "279:18:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "273:24:11",
+                  "scope": 2937,
+                  "src": "273:24:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -219,10 +226,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 2886,
+                    "id": 2930,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "273:5:11",
+                    "src": "273:5:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -231,20 +238,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "168:136:11"
+              "src": "168:136:12"
             },
             "returnParameters": {
-              "id": 2892,
+              "id": 2936,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2891,
+                  "id": 2935,
                   "mutability": "mutable",
                   "name": "interestToken",
+                  "nameLocation": "337:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "323:27:11",
+                  "scope": 2937,
+                  "src": "323:27:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -252,17 +260,17 @@
                     "typeString": "contract InterestToken"
                   },
                   "typeName": {
-                    "id": 2890,
+                    "id": 2934,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2889,
+                      "id": 2933,
                       "name": "InterestToken",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 166,
-                      "src": "323:13:11"
+                      "src": "323:13:12"
                     },
                     "referencedDeclaration": 166,
-                    "src": "323:13:11",
+                    "src": "323:13:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_InterestToken_$166",
                       "typeString": "contract InterestToken"
@@ -271,55 +279,56 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "322:29:11"
+              "src": "322:29:12"
             },
-            "scope": 2894,
-            "src": "140:212:11",
+            "scope": 2938,
+            "src": "140:212:12",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2895,
-        "src": "101:254:11"
+        "scope": 2939,
+        "src": "101:254:12",
+        "usedErrors": []
       }
     ],
-    "src": "40:317:11"
+    "src": "40:317:12"
   },
   "legacyAST": {
-    "absolutePath": "/d/Code/Conflux-UMA/element-demo/contracts/interfaces/IInterestTokenFactory.sol",
+    "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IInterestTokenFactory.sol",
     "exportedSymbols": {
       "DateString": [
-        3807
+        3877
       ],
       "ERC20Permit": [
-        4245
+        4315
       ],
       "IERC20": [
-        2817
+        2850
       ],
       "IERC20Permit": [
-        2856
+        2900
       ],
       "IInterestToken": [
-        2876
+        2920
       ],
       "IInterestTokenFactory": [
-        2894
+        2938
       ],
       "ITranche": [
-        2950
+        2994
       ],
       "InterestToken": [
         166
       ]
     },
-    "id": 2895,
+    "id": 2939,
     "license": "Apache-2.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2878,
+        "id": 2922,
         "literals": [
           "solidity",
           "^",
@@ -327,16 +336,17 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "40:23:11"
+        "src": "40:23:12"
       },
       {
-        "absolutePath": "/d/Code/Conflux-UMA/element-demo/contracts/InterestToken.sol",
+        "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/InterestToken.sol",
         "file": "../InterestToken.sol",
-        "id": 2879,
+        "id": 2923,
+        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 2895,
+        "scope": 2939,
         "sourceUnit": 167,
-        "src": "67:30:11",
+        "src": "67:30:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -346,33 +356,36 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 2894,
+        "id": 2938,
         "linearizedBaseContracts": [
-          2894
+          2938
         ],
         "name": "IInterestTokenFactory",
+        "nameLocation": "111:21:12",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "34bc3959",
-            "id": 2893,
+            "id": 2937,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "deployInterestToken",
+            "nameLocation": "149:19:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2888,
+              "id": 2932,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2881,
+                  "id": 2925,
                   "mutability": "mutable",
                   "name": "tranche",
+                  "nameLocation": "187:7:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "179:15:11",
+                  "scope": 2937,
+                  "src": "179:15:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -380,10 +393,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 2880,
+                    "id": 2924,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "179:7:11",
+                    "src": "179:7:12",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -394,12 +407,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2883,
+                  "id": 2927,
                   "mutability": "mutable",
                   "name": "strategySymbol",
+                  "nameLocation": "219:14:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "205:28:11",
+                  "scope": 2937,
+                  "src": "205:28:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -407,10 +421,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2882,
+                    "id": 2926,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "205:6:11",
+                    "src": "205:6:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -420,12 +434,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2885,
+                  "id": 2929,
                   "mutability": "mutable",
                   "name": "expiration",
+                  "nameLocation": "252:10:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "244:18:11",
+                  "scope": 2937,
+                  "src": "244:18:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -433,10 +448,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2884,
+                    "id": 2928,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "244:7:11",
+                    "src": "244:7:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -446,12 +461,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 2887,
+                  "id": 2931,
                   "mutability": "mutable",
                   "name": "underlyingDecimals",
+                  "nameLocation": "279:18:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "273:24:11",
+                  "scope": 2937,
+                  "src": "273:24:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -459,10 +475,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 2886,
+                    "id": 2930,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "273:5:11",
+                    "src": "273:5:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -471,20 +487,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "168:136:11"
+              "src": "168:136:12"
             },
             "returnParameters": {
-              "id": 2892,
+              "id": 2936,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2891,
+                  "id": 2935,
                   "mutability": "mutable",
                   "name": "interestToken",
+                  "nameLocation": "337:13:12",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2893,
-                  "src": "323:27:11",
+                  "scope": 2937,
+                  "src": "323:27:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -492,17 +509,17 @@
                     "typeString": "contract InterestToken"
                   },
                   "typeName": {
-                    "id": 2890,
+                    "id": 2934,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2889,
+                      "id": 2933,
                       "name": "InterestToken",
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 166,
-                      "src": "323:13:11"
+                      "src": "323:13:12"
                     },
                     "referencedDeclaration": 166,
-                    "src": "323:13:11",
+                    "src": "323:13:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_InterestToken_$166",
                       "typeString": "contract InterestToken"
@@ -511,28 +528,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "322:29:11"
+              "src": "322:29:12"
             },
-            "scope": 2894,
-            "src": "140:212:11",
+            "scope": 2938,
+            "src": "140:212:12",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2895,
-        "src": "101:254:11"
+        "scope": 2939,
+        "src": "101:254:12",
+        "usedErrors": []
       }
     ],
-    "src": "40:317:11"
+    "src": "40:317:12"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+    "version": "0.8.7+commit.e28d00a7.Linux.g++"
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-08-12T11:09:27.480Z",
+  "updatedAt": "2021-08-18T09:57:15.609Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

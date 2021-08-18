@@ -7,6 +7,7 @@ import "./interfaces/ITranche.sol";
 import "./interfaces/IWETH.sol";
 import "./interfaces/IWrappedPosition.sol";
 import "./libraries/Authorizable.sol";
+import "./libraries/SponsorWhitelistControl.sol";
 
 /// @author Element Finance
 /// @title User Proxy
@@ -30,6 +31,8 @@ contract UserProxy is Authorizable {
     address internal constant _ETH_CONSTANT = address(
         0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE
     );
+      // 代付
+    SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
 
     /// @dev Marks the msg.sender as authorized and sets them
     ///      as the owner in authorization library
@@ -45,6 +48,10 @@ contract UserProxy is Authorizable {
         weth = _weth;
         _trancheFactory = __trancheFactory;
         _trancheBytecodeHash = __trancheBytecodeHash;
+        
+        address[] memory users = new address[](1);
+        users[0] = address(0);
+        SPONSOR.addPrivilege(users);
     }
 
     /// @dev Requires that the contract is not frozen
