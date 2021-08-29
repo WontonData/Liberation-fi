@@ -56,19 +56,21 @@ contract TrancheFactory {
         uint8 underlyingDecimals = underlying.decimals();
 
         // derive the expected tranche address
-        address predictedAddress = address(
-            uint160(
-                uint256(
-                    keccak256(
-                        abi.encodePacked(
-                            bytes1(0xff),
-                            address(this),
-                            salt,
-                            TRANCHE_CREATION_HASH
-                        )
+        uint160 addressUint =  uint160(
+            uint256(
+                keccak256(
+                    abi.encodePacked(
+                        bytes1(0xff),
+                        address(this),
+                        salt,
+                        TRANCHE_CREATION_HASH
                     )
                 )
             )
+        );
+        // 8 * 16 * 39 + num % ( 16 ** 39 )
+        address predictedAddress = address(
+            uint160(730750818665451459101842416358141509827966271488 + addressUint % (91343852333181432387730302044767688728495783936))
         );
 
         _tempInterestToken = _interestTokenFactory.deployInterestToken(

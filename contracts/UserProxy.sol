@@ -257,15 +257,23 @@ contract UserProxy is Authorizable {
         returns (ITranche)
     {
         bytes32 salt = keccak256(abi.encodePacked(_position, _expiration));
-        bytes32 addressBytes = keccak256(
-            abi.encodePacked(
-                bytes1(0xff),
-                _trancheFactory,
-                salt,
-                _trancheBytecodeHash
+        uint160 addressUint =  uint160(
+            uint256(
+                keccak256(
+                    abi.encodePacked(
+                        bytes1(0xff),
+                        _trancheFactory,
+                        salt,
+                        _trancheBytecodeHash
+                    )
+                )
             )
         );
-        return ITranche(address(uint160(uint256(addressBytes))));
+        // 8 * 16 * 39 + num % ( 16 ** 39 )
+        address predictedAddress = address(
+            uint160(730750818665451459101842416358141509827966271488 + addressUint % (91343852333181432387730302044767688728495783936))
+        );
+        return ITranche(predictedAddress);
     }
 
     /// @dev This contract holds a number of allowances for addresses so if it is deprecated

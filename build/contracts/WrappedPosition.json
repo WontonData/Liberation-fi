@@ -466,7 +466,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"DOMAIN_SEPARATOR\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PERMIT_TYPEHASH\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_who\",\"type\":\"address\"}],\"name\":\"balanceOfUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_shares\",\"type\":\"uint256\"}],\"name\":\"getSharesToUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"nonces\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"permit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"}],\"name\":\"prefundedDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_shares\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_minUnderlying\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_minUnderlying\",\"type\":\"uint256\"}],\"name\":\"withdrawUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Element Finance\",\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"params\":{\"account\":\"The account which will be approve to transfer tokens\",\"amount\":\"The approval amount, if set to uint256.max the allowance does not go down on transfers.\"},\"returns\":{\"_0\":\"returns true for compatibility with the ERC20 standard\"}},\"balanceOfUnderlying(address)\":{\"params\":{\"_who\":\"The address to query\"},\"returns\":{\"_0\":\"The underlying token balance of the address\"}},\"constructor\":{\"params\":{\"_name\":\"the name of this contract\",\"_symbol\":\"the symbol for this contract\",\"_token\":\"The underlying token.               This token should revert in the event of a transfer failure.\"}},\"deposit(address,uint256)\":{\"params\":{\"_amount\":\"The amount of underlying tokens to deposit\",\"_destination\":\"The address to mint to\"},\"returns\":{\"_0\":\"Returns the number of Wrapped Position tokens minted\"}},\"getSharesToUnderlying(uint256)\":{\"params\":{\"_shares\":\"Shares to calculate underlying value for\"},\"returns\":{\"_0\":\"The value of underlying assets for the given shares\"}},\"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The signature for this function follows EIP 712 standard and should be generated with the      eth_signTypedData JSON RPC call instead of the eth_sign JSON RPC call. If using out of date      parity signing libraries the v component may need to be adjusted. Also it is very rare but possible      for v to be other values, those values are not supported.\",\"params\":{\"deadline\":\"the timestamp which the signature must be submitted by to be valid\",\"owner\":\"the owner of the account which is having the new approval set\",\"r\":\"The r component of the ECDSA signature\",\"s\":\"The s component of the ECDSA signature\",\"spender\":\"the address which will be allowed to spend owner's tokens\",\"v\":\"Extra ECDSA data which allows public key recovery from signature assumed to be 27 or 28\",\"value\":\"the new allowance value\"}},\"prefundedDeposit(address)\":{\"details\":\"WARNING - The call which funds this method MUST be in the same transaction\",\"params\":{\"_destination\":\"the destination of this deposit\"},\"returns\":{\"_0\":\"Returns (WP tokens minted, used underlying,                  senders WP balance before mint)\"}},\"transfer(address,uint256)\":{\"details\":\"transfers to this contract address or 0 will fail\",\"params\":{\"amount\":\"The amount user token to send\",\"recipient\":\"The address which will be credited with the tokens\"},\"returns\":{\"_0\":\"returns true on success, reverts on failure so cannot return false.\"}},\"transferFrom(address,address,uint256)\":{\"details\":\"will fail transfers which send funds to this contract or 0\",\"params\":{\"amount\":\"the number of tokens to send\",\"recipient\":\"The destination of the ERC20 tokens\",\"spender\":\"The source of the ERC20 tokens\"},\"returns\":{\"_0\":\"returns true on success and reverts on failure\"}},\"withdraw(address,uint256,uint256)\":{\"params\":{\"_destination\":\"The address which is credited with tokens\",\"_minUnderlying\":\"The min output the caller expects\",\"_shares\":\"The amount of shares the user is burning to withdraw underlying\"},\"returns\":{\"_0\":\"The amount of underlying transferred to the destination\"}},\"withdrawUnderlying(address,uint256,uint256)\":{\"params\":{\"_amount\":\"The amount of underlying to try to redeem for\",\"_destination\":\"The address to send the output to\",\"_minUnderlying\":\"The minium underlying to receive\"},\"returns\":{\"_0\":\"The amount of underlying released, and shares used\"}}},\"title\":\"Wrapped Position Core\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"approve(address,uint256)\":{\"notice\":\"This function allows a user to approve an account which can transfer         tokens on their behalf.\"},\"balanceOfUnderlying(address)\":{\"notice\":\"Get the underlying balance of an address\"},\"constructor\":{\"notice\":\"Constructs this contract\"},\"deposit(address,uint256)\":{\"notice\":\"Entry point to deposit tokens into the Wrapped Position contract         Transfers tokens on behalf of caller so the caller must set         allowance on the contract prior to call.\"},\"getSharesToUnderlying(uint256)\":{\"notice\":\"Returns the amount of the underlying asset a certain amount of shares is worth\"},\"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"This function allows a caller who is not the owner of an account to execute the functionality of 'approve' with the owners signature.\"},\"prefundedDeposit(address)\":{\"notice\":\"Entry point to deposit tokens into the Wrapped Position contract         Assumes the tokens were transferred before this was called\"},\"transfer(address,uint256)\":{\"notice\":\"Allows a token owner to send tokens to another address\"},\"transferFrom(address,address,uint256)\":{\"notice\":\"Transfers an amount of erc20 from a spender to a receipt\"},\"withdraw(address,uint256,uint256)\":{\"notice\":\"Exit point to withdraw tokens from the Wrapped Position contract\"},\"withdrawUnderlying(address,uint256,uint256)\":{\"notice\":\"This function burns enough tokens from the sender to send _amount          of underlying to the _destination.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/WrappedPosition.sol\":\"WrappedPosition\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/WrappedPosition.sol\":{\"keccak256\":\"0xf04a16ea42c96112354deab967449e52314d5a4ad4c918e4edd853f263c8cd1e\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://11ef9a994ccb58d37397518e1b5563e1424458e3d152adff9f51f69d202285ba\",\"dweb:/ipfs/QmbWKYXiD3NDbBCaKyYxq5zL2kmHeYwF7wCu4UHCvUpmqw\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20.sol\":{\"keccak256\":\"0x1745f14ec0297036e063365f7e0f4a9a4c6e266e2afc1d44f14a4c1ea44cb6b9\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://95156ccbd58489790ef30d42713c5001566826144b6eed1458e3bb295913df80\",\"dweb:/ipfs/QmdLeJLEdXU5SZetJUYRd1UMoQ3JD64xphXVuHQBKWuiwk\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20Permit.sol\":{\"keccak256\":\"0xe6b43bf550aa9a07d9d3ff23f2976e7ec9e75766f45c8b3d69218606796723d5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0a638f4bc0371354f7d71e907ac5732af693c7f946a2abb8736f9c1dfd80de87\",\"dweb:/ipfs/QmSGcJoVwdqpp1uaCTHyEGBqfVgDRwXpZzt3uWTFj5EWfk\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWETH.sol\":{\"keccak256\":\"0xe2741b898fcce3cc81d7108433477ff7ccd988f905f2a2d0b21c8b9eb6bb47f3\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://adc112d596f70e4e53aea2a6035574cc5c5a34addb582758838094b959e5aa21\",\"dweb:/ipfs/QmYGnPUNGdw9qYTvQpC6VmYR6kkwJd4GbrzkWNpspbvx9a\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWrappedPosition.sol\":{\"keccak256\":\"0xd66e98e9b805506e91b04f99633ee5b4401d01d90cfc56e993eee340d0c0bf3d\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://a14f574eb0f54b66e165e569fedce2b4fb114778b92bec865dac024177b0a01b\",\"dweb:/ipfs/QmYCNXwnatXiXV2PAMjJESXAC5NZx7dndJZavgd2AA7Lot\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/libraries/ERC20Permit.sol\":{\"keccak256\":\"0xa873bc3b6f233ab5c7ffdddaa2fdc545081bf1cfb3e4a1aa3e6a1390b8beed44\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://41a939d1064dd1aebe36edce6695ea8e8fece33fafbf6d2f54420a8cd50b3220\",\"dweb:/ipfs/QmVHwF7K75nJFrqyPKr3Y92vvQD4hyH2U8VbQcaHqg1hgm\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"DOMAIN_SEPARATOR\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PERMIT_TYPEHASH\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_who\",\"type\":\"address\"}],\"name\":\"balanceOfUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_shares\",\"type\":\"uint256\"}],\"name\":\"getSharesToUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"nonces\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"name\":\"permit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"}],\"name\":\"prefundedDeposit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_shares\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_minUnderlying\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_destination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_minUnderlying\",\"type\":\"uint256\"}],\"name\":\"withdrawUnderlying\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Element Finance\",\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"params\":{\"account\":\"The account which will be approve to transfer tokens\",\"amount\":\"The approval amount, if set to uint256.max the allowance does not go down on transfers.\"},\"returns\":{\"_0\":\"returns true for compatibility with the ERC20 standard\"}},\"balanceOfUnderlying(address)\":{\"params\":{\"_who\":\"The address to query\"},\"returns\":{\"_0\":\"The underlying token balance of the address\"}},\"constructor\":{\"params\":{\"_name\":\"the name of this contract\",\"_symbol\":\"the symbol for this contract\",\"_token\":\"The underlying token.               This token should revert in the event of a transfer failure.\"}},\"deposit(address,uint256)\":{\"params\":{\"_amount\":\"The amount of underlying tokens to deposit\",\"_destination\":\"The address to mint to\"},\"returns\":{\"_0\":\"Returns the number of Wrapped Position tokens minted\"}},\"getSharesToUnderlying(uint256)\":{\"params\":{\"_shares\":\"Shares to calculate underlying value for\"},\"returns\":{\"_0\":\"The value of underlying assets for the given shares\"}},\"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)\":{\"details\":\"The signature for this function follows EIP 712 standard and should be generated with the      eth_signTypedData JSON RPC call instead of the eth_sign JSON RPC call. If using out of date      parity signing libraries the v component may need to be adjusted. Also it is very rare but possible      for v to be other values, those values are not supported.\",\"params\":{\"deadline\":\"the timestamp which the signature must be submitted by to be valid\",\"owner\":\"the owner of the account which is having the new approval set\",\"r\":\"The r component of the ECDSA signature\",\"s\":\"The s component of the ECDSA signature\",\"spender\":\"the address which will be allowed to spend owner's tokens\",\"v\":\"Extra ECDSA data which allows public key recovery from signature assumed to be 27 or 28\",\"value\":\"the new allowance value\"}},\"prefundedDeposit(address)\":{\"details\":\"WARNING - The call which funds this method MUST be in the same transaction\",\"params\":{\"_destination\":\"the destination of this deposit\"},\"returns\":{\"_0\":\"Returns (WP tokens minted, used underlying,                  senders WP balance before mint)\"}},\"transfer(address,uint256)\":{\"details\":\"transfers to this contract address or 0 will fail\",\"params\":{\"amount\":\"The amount user token to send\",\"recipient\":\"The address which will be credited with the tokens\"},\"returns\":{\"_0\":\"returns true on success, reverts on failure so cannot return false.\"}},\"transferFrom(address,address,uint256)\":{\"details\":\"will fail transfers which send funds to this contract or 0\",\"params\":{\"amount\":\"the number of tokens to send\",\"recipient\":\"The destination of the ERC20 tokens\",\"spender\":\"The source of the ERC20 tokens\"},\"returns\":{\"_0\":\"returns true on success and reverts on failure\"}},\"withdraw(address,uint256,uint256)\":{\"params\":{\"_destination\":\"The address which is credited with tokens\",\"_minUnderlying\":\"The min output the caller expects\",\"_shares\":\"The amount of shares the user is burning to withdraw underlying\"},\"returns\":{\"_0\":\"The amount of underlying transferred to the destination\"}},\"withdrawUnderlying(address,uint256,uint256)\":{\"params\":{\"_amount\":\"The amount of underlying to try to redeem for\",\"_destination\":\"The address to send the output to\",\"_minUnderlying\":\"The minium underlying to receive\"},\"returns\":{\"_0\":\"The amount of underlying released, and shares used\"}}},\"title\":\"Wrapped Position Core\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"approve(address,uint256)\":{\"notice\":\"This function allows a user to approve an account which can transfer         tokens on their behalf.\"},\"balanceOfUnderlying(address)\":{\"notice\":\"Get the underlying balance of an address\"},\"constructor\":{\"notice\":\"Constructs this contract\"},\"deposit(address,uint256)\":{\"notice\":\"Entry point to deposit tokens into the Wrapped Position contract         Transfers tokens on behalf of caller so the caller must set         allowance on the contract prior to call.\"},\"getSharesToUnderlying(uint256)\":{\"notice\":\"Returns the amount of the underlying asset a certain amount of shares is worth\"},\"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)\":{\"notice\":\"This function allows a caller who is not the owner of an account to execute the functionality of 'approve' with the owners signature.\"},\"prefundedDeposit(address)\":{\"notice\":\"Entry point to deposit tokens into the Wrapped Position contract         Assumes the tokens were transferred before this was called\"},\"transfer(address,uint256)\":{\"notice\":\"Allows a token owner to send tokens to another address\"},\"transferFrom(address,address,uint256)\":{\"notice\":\"Transfers an amount of erc20 from a spender to a receipt\"},\"withdraw(address,uint256,uint256)\":{\"notice\":\"Exit point to withdraw tokens from the Wrapped Position contract\"},\"withdrawUnderlying(address,uint256,uint256)\":{\"notice\":\"This function burns enough tokens from the sender to send _amount          of underlying to the _destination.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/WrappedPosition.sol\":\"WrappedPosition\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/WrappedPosition.sol\":{\"keccak256\":\"0xf04a16ea42c96112354deab967449e52314d5a4ad4c918e4edd853f263c8cd1e\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://11ef9a994ccb58d37397518e1b5563e1424458e3d152adff9f51f69d202285ba\",\"dweb:/ipfs/QmbWKYXiD3NDbBCaKyYxq5zL2kmHeYwF7wCu4UHCvUpmqw\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20.sol\":{\"keccak256\":\"0x1745f14ec0297036e063365f7e0f4a9a4c6e266e2afc1d44f14a4c1ea44cb6b9\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://95156ccbd58489790ef30d42713c5001566826144b6eed1458e3bb295913df80\",\"dweb:/ipfs/QmdLeJLEdXU5SZetJUYRd1UMoQ3JD64xphXVuHQBKWuiwk\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20Permit.sol\":{\"keccak256\":\"0xe6b43bf550aa9a07d9d3ff23f2976e7ec9e75766f45c8b3d69218606796723d5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0a638f4bc0371354f7d71e907ac5732af693c7f946a2abb8736f9c1dfd80de87\",\"dweb:/ipfs/QmSGcJoVwdqpp1uaCTHyEGBqfVgDRwXpZzt3uWTFj5EWfk\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWETH.sol\":{\"keccak256\":\"0xe2741b898fcce3cc81d7108433477ff7ccd988f905f2a2d0b21c8b9eb6bb47f3\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://adc112d596f70e4e53aea2a6035574cc5c5a34addb582758838094b959e5aa21\",\"dweb:/ipfs/QmYGnPUNGdw9qYTvQpC6VmYR6kkwJd4GbrzkWNpspbvx9a\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWrappedPosition.sol\":{\"keccak256\":\"0xd66e98e9b805506e91b04f99633ee5b4401d01d90cfc56e993eee340d0c0bf3d\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://a14f574eb0f54b66e165e569fedce2b4fb114778b92bec865dac024177b0a01b\",\"dweb:/ipfs/QmYCNXwnatXiXV2PAMjJESXAC5NZx7dndJZavgd2AA7Lot\"]},\"/f/BlockChain/conflux/contract/Liberation-fi/contracts/libraries/ERC20Permit.sol\":{\"keccak256\":\"0xa873bc3b6f233ab5c7ffdddaa2fdc545081bf1cfb3e4a1aa3e6a1390b8beed44\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://41a939d1064dd1aebe36edce6695ea8e8fece33fafbf6d2f54420a8cd50b3220\",\"dweb:/ipfs/QmVHwF7K75nJFrqyPKr3Y92vvQD4hyH2U8VbQcaHqg1hgm\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -480,19 +480,19 @@
     "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/WrappedPosition.sol",
     "exportedSymbols": {
       "ERC20Permit": [
-        4315
+        4316
       ],
       "IERC20": [
-        2850
+        2862
       ],
       "IERC20Permit": [
-        2900
+        2901
       ],
       "IWETH": [
-        3063
+        3064
       ],
       "IWrappedPosition": [
-        3134
+        3135
       ],
       "WrappedPosition": [
         1708
@@ -517,10 +517,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20.sol",
         "file": "./interfaces/IERC20.sol",
         "id": 1429,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 2851,
+        "sourceUnit": 2863,
         "src": "67:33:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -529,10 +528,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWETH.sol",
         "file": "./interfaces/IWETH.sol",
         "id": 1430,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 3064,
+        "sourceUnit": 3065,
         "src": "102:32:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -541,10 +539,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWrappedPosition.sol",
         "file": "./interfaces/IWrappedPosition.sol",
         "id": 1431,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 3135,
+        "sourceUnit": 3136,
         "src": "136:43:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -553,10 +550,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/libraries/ERC20Permit.sol",
         "file": "./libraries/ERC20Permit.sol",
         "id": 1432,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 4316,
+        "sourceUnit": 4317,
         "src": "183:37:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -569,7 +565,7 @@
               "id": 1434,
               "name": "ERC20Permit",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4315,
+              "referencedDeclaration": 4316,
               "src": "324:11:3"
             },
             "id": 1435,
@@ -581,7 +577,7 @@
               "id": 1436,
               "name": "IWrappedPosition",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3134,
+              "referencedDeclaration": 3135,
               "src": "337:16:3"
             },
             "id": 1437,
@@ -589,7 +585,12 @@
             "src": "337:16:3"
           }
         ],
-        "contractDependencies": [],
+        "contractDependencies": [
+          2862,
+          2901,
+          3135,
+          4316
+        ],
         "contractKind": "contract",
         "documentation": {
           "id": 1433,
@@ -601,25 +602,23 @@
         "id": 1708,
         "linearizedBaseContracts": [
           1708,
-          3134,
-          4315,
-          2900,
-          2850
+          3135,
+          4316,
+          2901,
+          2862
         ],
         "name": "WrappedPosition",
-        "nameLocation": "305:15:3",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "baseFunctions": [
-              3075
+              3076
             ],
             "constant": false,
             "functionSelector": "fc0c546a",
             "id": 1441,
             "mutability": "immutable",
             "name": "token",
-            "nameLocation": "394:5:3",
             "nodeType": "VariableDeclaration",
             "overrides": {
               "id": 1440,
@@ -632,7 +631,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IERC20_$2850",
+              "typeIdentifier": "t_contract$_IERC20_$2862",
               "typeString": "contract IERC20"
             },
             "typeName": {
@@ -642,13 +641,13 @@
                 "id": 1438,
                 "name": "IERC20",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2850,
+                "referencedDeclaration": 2862,
                 "src": "361:6:3"
               },
-              "referencedDeclaration": 2850,
+              "referencedDeclaration": 2862,
               "src": "361:6:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC20_$2850",
+                "typeIdentifier": "t_contract$_IERC20_$2862",
                 "typeString": "contract IERC20"
               }
             },
@@ -675,7 +674,7 @@
                       "referencedDeclaration": 1441,
                       "src": "824:5:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2850",
+                        "typeIdentifier": "t_contract$_IERC20_$2862",
                         "typeString": "contract IERC20"
                       }
                     },
@@ -689,13 +688,13 @@
                       "referencedDeclaration": 1445,
                       "src": "832:6:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2850",
+                        "typeIdentifier": "t_contract$_IERC20_$2862",
                         "typeString": "contract IERC20"
                       }
                     },
                     "src": "824:14:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2850",
+                      "typeIdentifier": "t_contract$_IERC20_$2862",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -718,7 +717,7 @@
                             "referencedDeclaration": 1445,
                             "src": "929:6:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IERC20_$2850",
+                              "typeIdentifier": "t_contract$_IERC20_$2862",
                               "typeString": "contract IERC20"
                             }
                           },
@@ -729,7 +728,7 @@
                           "lValueRequested": false,
                           "memberName": "decimals",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2795,
+                          "referencedDeclaration": 2807,
                           "src": "929:15:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_uint8_$",
@@ -763,7 +762,7 @@
                       "name": "_setupDecimals",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4315,
                       "src": "914:14:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint8_$returns$__$",
@@ -829,12 +828,11 @@
                   }
                 ],
                 "id": 1454,
-                "kind": "baseConstructorSpecifier",
                 "modifierName": {
                   "id": 1451,
                   "name": "ERC20Permit",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4315,
+                  "referencedDeclaration": 4316,
                   "src": "785:11:3"
                 },
                 "nodeType": "ModifierInvocation",
@@ -842,7 +840,6 @@
               }
             ],
             "name": "",
-            "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1450,
@@ -853,14 +850,13 @@
                   "id": 1445,
                   "mutability": "mutable",
                   "name": "_token",
-                  "nameLocation": "709:6:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1467,
                   "src": "702:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20_$2850",
+                    "typeIdentifier": "t_contract$_IERC20_$2862",
                     "typeString": "contract IERC20"
                   },
                   "typeName": {
@@ -870,13 +866,13 @@
                       "id": 1443,
                       "name": "IERC20",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2850,
+                      "referencedDeclaration": 2862,
                       "src": "702:6:3"
                     },
-                    "referencedDeclaration": 2850,
+                    "referencedDeclaration": 2862,
                     "src": "702:6:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2850",
+                      "typeIdentifier": "t_contract$_IERC20_$2862",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -887,7 +883,6 @@
                   "id": 1447,
                   "mutability": "mutable",
                   "name": "_name",
-                  "nameLocation": "740:5:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1467,
                   "src": "726:19:3",
@@ -914,7 +909,6 @@
                   "id": 1449,
                   "mutability": "mutable",
                   "name": "_symbol",
-                  "nameLocation": "770:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1467,
                   "src": "756:21:3",
@@ -963,7 +957,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_deposit",
-            "nameLocation": "1229:8:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1469,
@@ -980,7 +973,6 @@
                   "id": 1471,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1475,
                   "src": "1266:7:3",
@@ -1007,7 +999,6 @@
                   "id": 1473,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1475,
                   "src": "1275:7:3",
@@ -1050,7 +1041,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_withdraw",
-            "nameLocation": "1403:9:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1483,
@@ -1061,7 +1051,6 @@
                   "id": 1478,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1423:7:3",
@@ -1088,7 +1077,6 @@
                   "id": 1480,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1441:7:3",
@@ -1116,7 +1104,6 @@
                   "id": 1482,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1459:7:3",
@@ -1150,7 +1137,6 @@
                   "id": 1485,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1500:7:3",
@@ -1193,7 +1179,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_underlying",
-            "nameLocation": "1690:11:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1491,
@@ -1204,7 +1189,6 @@
                   "id": 1490,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1495,
                   "src": "1702:7:3",
@@ -1238,7 +1222,6 @@
                   "id": 1493,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1495,
                   "src": "1742:7:3",
@@ -1271,7 +1254,7 @@
           },
           {
             "baseFunctions": [
-              3082
+              3083
             ],
             "body": {
               "id": 1510,
@@ -1287,7 +1270,7 @@
                           "name": "balanceOf",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3895,
+                          "referencedDeclaration": 3896,
                           "src": "2075:9:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
@@ -1371,7 +1354,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "balanceOfUnderlying",
-            "nameLocation": "1929:19:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1500,
@@ -1388,7 +1370,6 @@
                   "id": 1498,
                   "mutability": "mutable",
                   "name": "_who",
-                  "nameLocation": "1957:4:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1511,
                   "src": "1949:12:3",
@@ -1423,7 +1404,6 @@
                   "id": 1502,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1511,
                   "src": "2031:7:3",
@@ -1456,7 +1436,7 @@
           },
           {
             "baseFunctions": [
-              3089
+              3090
             ],
             "body": {
               "id": 1524,
@@ -1531,7 +1511,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "getSharesToUnderlying",
-            "nameLocation": "2346:21:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1516,
@@ -1548,7 +1527,6 @@
                   "id": 1514,
                   "mutability": "mutable",
                   "name": "_shares",
-                  "nameLocation": "2376:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1525,
                   "src": "2368:15:3",
@@ -1582,7 +1560,6 @@
                   "id": 1518,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1525,
                   "src": "2453:7:3",
@@ -1615,7 +1592,7 @@
           },
           {
             "baseFunctions": [
-              3098
+              3099
             ],
             "body": {
               "id": 1560,
@@ -1631,7 +1608,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": -15,
+                          "referencedDeclaration": 4294967281,
                           "src": "3118:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1658,7 +1635,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": -28,
+                            "referencedDeclaration": 4294967268,
                             "src": "3138:4:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_WrappedPosition_$1708",
@@ -1743,7 +1720,7 @@
                         "referencedDeclaration": 1441,
                         "src": "3099:5:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2850",
+                          "typeIdentifier": "t_contract$_IERC20_$2862",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -1754,7 +1731,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2833,
+                      "referencedDeclaration": 2845,
                       "src": "3099:18:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -1791,7 +1768,6 @@
                       "id": 1549,
                       "mutability": "mutable",
                       "name": "shares",
-                      "nameLocation": "3221:6:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1560,
                       "src": "3213:14:3",
@@ -1892,7 +1868,7 @@
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4139,
+                      "referencedDeclaration": 4140,
                       "src": "3327:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -1950,7 +1926,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "deposit",
-            "nameLocation": "2936:7:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1532,
@@ -1967,7 +1942,6 @@
                   "id": 1528,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "2952:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1561,
                   "src": "2944:20:3",
@@ -1995,7 +1969,6 @@
                   "id": 1530,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "2974:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1561,
                   "src": "2966:15:3",
@@ -2029,7 +2002,6 @@
                   "id": 1534,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1561,
                   "src": "3037:7:3",
@@ -2062,7 +2034,7 @@
           },
           {
             "baseFunctions": [
-              3133
+              3134
             ],
             "body": {
               "id": 1597,
@@ -2080,7 +2052,6 @@
                       "id": 1575,
                       "mutability": "mutable",
                       "name": "shares",
-                      "nameLocation": "4150:6:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1597,
                       "src": "4142:14:3",
@@ -2107,7 +2078,6 @@
                       "id": 1577,
                       "mutability": "mutable",
                       "name": "usedUnderlying",
-                      "nameLocation": "4166:14:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1597,
                       "src": "4158:22:3",
@@ -2174,7 +2144,6 @@
                       "id": 1582,
                       "mutability": "mutable",
                       "name": "balanceBefore",
-                      "nameLocation": "4215:13:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1597,
                       "src": "4207:21:3",
@@ -2204,7 +2173,7 @@
                       "name": "balanceOf",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3895,
+                      "referencedDeclaration": 3896,
                       "src": "4231:9:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
@@ -2281,7 +2250,7 @@
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4139,
+                      "referencedDeclaration": 4140,
                       "src": "4340:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -2379,7 +2348,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "prefundedDeposit",
-            "nameLocation": "3907:16:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1566,
@@ -2396,7 +2364,6 @@
                   "id": 1564,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "3932:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "3924:20:3",
@@ -2431,7 +2398,6 @@
                   "id": 1568,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "4014:7:3",
@@ -2458,7 +2424,6 @@
                   "id": 1570,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "4036:7:3",
@@ -2485,7 +2450,6 @@
                   "id": 1572,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "4058:7:3",
@@ -2518,7 +2482,7 @@
           },
           {
             "baseFunctions": [
-              3109
+              3110
             ],
             "body": {
               "id": 1618,
@@ -2645,7 +2609,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdraw",
-            "nameLocation": "4828:8:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1607,
@@ -2662,7 +2625,6 @@
                   "id": 1601,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "4855:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4847:20:3",
@@ -2690,7 +2652,6 @@
                   "id": 1603,
                   "mutability": "mutable",
                   "name": "_shares",
-                  "nameLocation": "4886:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4878:15:3",
@@ -2717,7 +2678,6 @@
                   "id": 1605,
                   "mutability": "mutable",
                   "name": "_minUnderlying",
-                  "nameLocation": "4912:14:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4904:22:3",
@@ -2751,7 +2711,6 @@
                   "id": 1609,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4959:7:3",
@@ -2784,7 +2743,7 @@
           },
           {
             "baseFunctions": [
-              3122
+              3123
             ],
             "body": {
               "id": 1668,
@@ -2801,7 +2760,6 @@
                       "id": 1635,
                       "mutability": "mutable",
                       "name": "oneUnit",
-                      "nameLocation": "5737:7:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "5729:15:3",
@@ -2858,7 +2816,7 @@
                       "name": "decimals",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3890,
+                      "referencedDeclaration": 3891,
                       "src": "5751:8:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
@@ -2884,7 +2842,6 @@
                       "id": 1641,
                       "mutability": "mutable",
                       "name": "underlyingPerShare",
-                      "nameLocation": "5778:18:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "5770:26:3",
@@ -2969,7 +2926,6 @@
                       "id": 1647,
                       "mutability": "mutable",
                       "name": "shares",
-                      "nameLocation": "5897:6:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "5889:14:3",
@@ -3094,7 +3050,6 @@
                       "id": 1656,
                       "mutability": "mutable",
                       "name": "underlyingReceived",
-                      "nameLocation": "6025:18:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "6017:26:3",
@@ -3277,7 +3232,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdrawUnderlying",
-            "nameLocation": "5471:18:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1628,
@@ -3294,7 +3248,6 @@
                   "id": 1622,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "5508:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5500:20:3",
@@ -3322,7 +3275,6 @@
                   "id": 1624,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "5539:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5531:15:3",
@@ -3349,7 +3301,6 @@
                   "id": 1626,
                   "mutability": "mutable",
                   "name": "_minUnderlying",
-                  "nameLocation": "5565:14:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5557:22:3",
@@ -3383,7 +3334,6 @@
                   "id": 1630,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5614:7:3",
@@ -3410,7 +3360,6 @@
                   "id": 1632,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5623:7:3",
@@ -3456,7 +3405,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": -15,
+                          "referencedDeclaration": 4294967281,
                           "src": "6982:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3504,7 +3453,7 @@
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4167,
+                      "referencedDeclaration": 4168,
                       "src": "6976:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -3540,7 +3489,6 @@
                       "id": 1690,
                       "mutability": "mutable",
                       "name": "withdrawAmount",
-                      "nameLocation": "7076:14:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1706,
                       "src": "7068:22:3",
@@ -3724,10 +3672,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        -18,
-                        -18
+                        4294967278,
+                        4294967278
                       ],
-                      "referencedDeclaration": -18,
+                      "referencedDeclaration": 4294967278,
                       "src": "7341:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3784,7 +3732,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_positionWithdraw",
-            "nameLocation": "6755:17:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1679,
@@ -3795,7 +3742,6 @@
                   "id": 1672,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "6791:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6783:20:3",
@@ -3823,7 +3769,6 @@
                   "id": 1674,
                   "mutability": "mutable",
                   "name": "_shares",
-                  "nameLocation": "6822:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6814:15:3",
@@ -3850,7 +3795,6 @@
                   "id": 1676,
                   "mutability": "mutable",
                   "name": "_minUnderlying",
-                  "nameLocation": "6848:14:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6840:22:3",
@@ -3877,7 +3821,6 @@
                   "id": 1678,
                   "mutability": "mutable",
                   "name": "_underlyingPerShare",
-                  "nameLocation": "6881:19:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6873:27:3",
@@ -3911,7 +3854,6 @@
                   "id": 1681,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6926:7:3",
@@ -3944,8 +3886,7 @@
           }
         ],
         "scope": 1709,
-        "src": "287:7163:3",
-        "usedErrors": []
+        "src": "287:7163:3"
       }
     ],
     "src": "40:7410:3"
@@ -3954,19 +3895,19 @@
     "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/WrappedPosition.sol",
     "exportedSymbols": {
       "ERC20Permit": [
-        4315
+        4316
       ],
       "IERC20": [
-        2850
+        2862
       ],
       "IERC20Permit": [
-        2900
+        2901
       ],
       "IWETH": [
-        3063
+        3064
       ],
       "IWrappedPosition": [
-        3134
+        3135
       ],
       "WrappedPosition": [
         1708
@@ -3991,10 +3932,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IERC20.sol",
         "file": "./interfaces/IERC20.sol",
         "id": 1429,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 2851,
+        "sourceUnit": 2863,
         "src": "67:33:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4003,10 +3943,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWETH.sol",
         "file": "./interfaces/IWETH.sol",
         "id": 1430,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 3064,
+        "sourceUnit": 3065,
         "src": "102:32:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4015,10 +3954,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/interfaces/IWrappedPosition.sol",
         "file": "./interfaces/IWrappedPosition.sol",
         "id": 1431,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 3135,
+        "sourceUnit": 3136,
         "src": "136:43:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4027,10 +3965,9 @@
         "absolutePath": "/f/BlockChain/conflux/contract/Liberation-fi/contracts/libraries/ERC20Permit.sol",
         "file": "./libraries/ERC20Permit.sol",
         "id": 1432,
-        "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1709,
-        "sourceUnit": 4316,
+        "sourceUnit": 4317,
         "src": "183:37:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -4043,7 +3980,7 @@
               "id": 1434,
               "name": "ERC20Permit",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4315,
+              "referencedDeclaration": 4316,
               "src": "324:11:3"
             },
             "id": 1435,
@@ -4055,7 +3992,7 @@
               "id": 1436,
               "name": "IWrappedPosition",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3134,
+              "referencedDeclaration": 3135,
               "src": "337:16:3"
             },
             "id": 1437,
@@ -4063,7 +4000,12 @@
             "src": "337:16:3"
           }
         ],
-        "contractDependencies": [],
+        "contractDependencies": [
+          2862,
+          2901,
+          3135,
+          4316
+        ],
         "contractKind": "contract",
         "documentation": {
           "id": 1433,
@@ -4075,25 +4017,23 @@
         "id": 1708,
         "linearizedBaseContracts": [
           1708,
-          3134,
-          4315,
-          2900,
-          2850
+          3135,
+          4316,
+          2901,
+          2862
         ],
         "name": "WrappedPosition",
-        "nameLocation": "305:15:3",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "baseFunctions": [
-              3075
+              3076
             ],
             "constant": false,
             "functionSelector": "fc0c546a",
             "id": 1441,
             "mutability": "immutable",
             "name": "token",
-            "nameLocation": "394:5:3",
             "nodeType": "VariableDeclaration",
             "overrides": {
               "id": 1440,
@@ -4106,7 +4046,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IERC20_$2850",
+              "typeIdentifier": "t_contract$_IERC20_$2862",
               "typeString": "contract IERC20"
             },
             "typeName": {
@@ -4116,13 +4056,13 @@
                 "id": 1438,
                 "name": "IERC20",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2850,
+                "referencedDeclaration": 2862,
                 "src": "361:6:3"
               },
-              "referencedDeclaration": 2850,
+              "referencedDeclaration": 2862,
               "src": "361:6:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC20_$2850",
+                "typeIdentifier": "t_contract$_IERC20_$2862",
                 "typeString": "contract IERC20"
               }
             },
@@ -4149,7 +4089,7 @@
                       "referencedDeclaration": 1441,
                       "src": "824:5:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2850",
+                        "typeIdentifier": "t_contract$_IERC20_$2862",
                         "typeString": "contract IERC20"
                       }
                     },
@@ -4163,13 +4103,13 @@
                       "referencedDeclaration": 1445,
                       "src": "832:6:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$2850",
+                        "typeIdentifier": "t_contract$_IERC20_$2862",
                         "typeString": "contract IERC20"
                       }
                     },
                     "src": "824:14:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2850",
+                      "typeIdentifier": "t_contract$_IERC20_$2862",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -4192,7 +4132,7 @@
                             "referencedDeclaration": 1445,
                             "src": "929:6:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IERC20_$2850",
+                              "typeIdentifier": "t_contract$_IERC20_$2862",
                               "typeString": "contract IERC20"
                             }
                           },
@@ -4203,7 +4143,7 @@
                           "lValueRequested": false,
                           "memberName": "decimals",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2795,
+                          "referencedDeclaration": 2807,
                           "src": "929:15:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$__$returns$_t_uint8_$",
@@ -4237,7 +4177,7 @@
                       "name": "_setupDecimals",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4315,
                       "src": "914:14:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint8_$returns$__$",
@@ -4303,12 +4243,11 @@
                   }
                 ],
                 "id": 1454,
-                "kind": "baseConstructorSpecifier",
                 "modifierName": {
                   "id": 1451,
                   "name": "ERC20Permit",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4315,
+                  "referencedDeclaration": 4316,
                   "src": "785:11:3"
                 },
                 "nodeType": "ModifierInvocation",
@@ -4316,7 +4255,6 @@
               }
             ],
             "name": "",
-            "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1450,
@@ -4327,14 +4265,13 @@
                   "id": 1445,
                   "mutability": "mutable",
                   "name": "_token",
-                  "nameLocation": "709:6:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1467,
                   "src": "702:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20_$2850",
+                    "typeIdentifier": "t_contract$_IERC20_$2862",
                     "typeString": "contract IERC20"
                   },
                   "typeName": {
@@ -4344,13 +4281,13 @@
                       "id": 1443,
                       "name": "IERC20",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2850,
+                      "referencedDeclaration": 2862,
                       "src": "702:6:3"
                     },
-                    "referencedDeclaration": 2850,
+                    "referencedDeclaration": 2862,
                     "src": "702:6:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$2850",
+                      "typeIdentifier": "t_contract$_IERC20_$2862",
                       "typeString": "contract IERC20"
                     }
                   },
@@ -4361,7 +4298,6 @@
                   "id": 1447,
                   "mutability": "mutable",
                   "name": "_name",
-                  "nameLocation": "740:5:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1467,
                   "src": "726:19:3",
@@ -4388,7 +4324,6 @@
                   "id": 1449,
                   "mutability": "mutable",
                   "name": "_symbol",
-                  "nameLocation": "770:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1467,
                   "src": "756:21:3",
@@ -4437,7 +4372,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_deposit",
-            "nameLocation": "1229:8:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1469,
@@ -4454,7 +4388,6 @@
                   "id": 1471,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1475,
                   "src": "1266:7:3",
@@ -4481,7 +4414,6 @@
                   "id": 1473,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1475,
                   "src": "1275:7:3",
@@ -4524,7 +4456,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_withdraw",
-            "nameLocation": "1403:9:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1483,
@@ -4535,7 +4466,6 @@
                   "id": 1478,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1423:7:3",
@@ -4562,7 +4492,6 @@
                   "id": 1480,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1441:7:3",
@@ -4590,7 +4519,6 @@
                   "id": 1482,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1459:7:3",
@@ -4624,7 +4552,6 @@
                   "id": 1485,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1487,
                   "src": "1500:7:3",
@@ -4667,7 +4594,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_underlying",
-            "nameLocation": "1690:11:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1491,
@@ -4678,7 +4604,6 @@
                   "id": 1490,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1495,
                   "src": "1702:7:3",
@@ -4712,7 +4637,6 @@
                   "id": 1493,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1495,
                   "src": "1742:7:3",
@@ -4745,7 +4669,7 @@
           },
           {
             "baseFunctions": [
-              3082
+              3083
             ],
             "body": {
               "id": 1510,
@@ -4761,7 +4685,7 @@
                           "name": "balanceOf",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3895,
+                          "referencedDeclaration": 3896,
                           "src": "2075:9:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
@@ -4845,7 +4769,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "balanceOfUnderlying",
-            "nameLocation": "1929:19:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1500,
@@ -4862,7 +4785,6 @@
                   "id": 1498,
                   "mutability": "mutable",
                   "name": "_who",
-                  "nameLocation": "1957:4:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1511,
                   "src": "1949:12:3",
@@ -4897,7 +4819,6 @@
                   "id": 1502,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1511,
                   "src": "2031:7:3",
@@ -4930,7 +4851,7 @@
           },
           {
             "baseFunctions": [
-              3089
+              3090
             ],
             "body": {
               "id": 1524,
@@ -5005,7 +4926,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "getSharesToUnderlying",
-            "nameLocation": "2346:21:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1516,
@@ -5022,7 +4942,6 @@
                   "id": 1514,
                   "mutability": "mutable",
                   "name": "_shares",
-                  "nameLocation": "2376:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1525,
                   "src": "2368:15:3",
@@ -5056,7 +4975,6 @@
                   "id": 1518,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1525,
                   "src": "2453:7:3",
@@ -5089,7 +5007,7 @@
           },
           {
             "baseFunctions": [
-              3098
+              3099
             ],
             "body": {
               "id": 1560,
@@ -5105,7 +5023,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": -15,
+                          "referencedDeclaration": 4294967281,
                           "src": "3118:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -5132,7 +5050,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": -28,
+                            "referencedDeclaration": 4294967268,
                             "src": "3138:4:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_WrappedPosition_$1708",
@@ -5217,7 +5135,7 @@
                         "referencedDeclaration": 1441,
                         "src": "3099:5:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$2850",
+                          "typeIdentifier": "t_contract$_IERC20_$2862",
                           "typeString": "contract IERC20"
                         }
                       },
@@ -5228,7 +5146,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2833,
+                      "referencedDeclaration": 2845,
                       "src": "3099:18:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -5265,7 +5183,6 @@
                       "id": 1549,
                       "mutability": "mutable",
                       "name": "shares",
-                      "nameLocation": "3221:6:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1560,
                       "src": "3213:14:3",
@@ -5366,7 +5283,7 @@
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4139,
+                      "referencedDeclaration": 4140,
                       "src": "3327:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -5424,7 +5341,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "deposit",
-            "nameLocation": "2936:7:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1532,
@@ -5441,7 +5357,6 @@
                   "id": 1528,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "2952:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1561,
                   "src": "2944:20:3",
@@ -5469,7 +5384,6 @@
                   "id": 1530,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "2974:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1561,
                   "src": "2966:15:3",
@@ -5503,7 +5417,6 @@
                   "id": 1534,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1561,
                   "src": "3037:7:3",
@@ -5536,7 +5449,7 @@
           },
           {
             "baseFunctions": [
-              3133
+              3134
             ],
             "body": {
               "id": 1597,
@@ -5554,7 +5467,6 @@
                       "id": 1575,
                       "mutability": "mutable",
                       "name": "shares",
-                      "nameLocation": "4150:6:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1597,
                       "src": "4142:14:3",
@@ -5581,7 +5493,6 @@
                       "id": 1577,
                       "mutability": "mutable",
                       "name": "usedUnderlying",
-                      "nameLocation": "4166:14:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1597,
                       "src": "4158:22:3",
@@ -5648,7 +5559,6 @@
                       "id": 1582,
                       "mutability": "mutable",
                       "name": "balanceBefore",
-                      "nameLocation": "4215:13:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1597,
                       "src": "4207:21:3",
@@ -5678,7 +5588,7 @@
                       "name": "balanceOf",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3895,
+                      "referencedDeclaration": 3896,
                       "src": "4231:9:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
@@ -5755,7 +5665,7 @@
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4139,
+                      "referencedDeclaration": 4140,
                       "src": "4340:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -5853,7 +5763,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "prefundedDeposit",
-            "nameLocation": "3907:16:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1566,
@@ -5870,7 +5779,6 @@
                   "id": 1564,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "3932:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "3924:20:3",
@@ -5905,7 +5813,6 @@
                   "id": 1568,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "4014:7:3",
@@ -5932,7 +5839,6 @@
                   "id": 1570,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "4036:7:3",
@@ -5959,7 +5865,6 @@
                   "id": 1572,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1598,
                   "src": "4058:7:3",
@@ -5992,7 +5897,7 @@
           },
           {
             "baseFunctions": [
-              3109
+              3110
             ],
             "body": {
               "id": 1618,
@@ -6119,7 +6024,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdraw",
-            "nameLocation": "4828:8:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1607,
@@ -6136,7 +6040,6 @@
                   "id": 1601,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "4855:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4847:20:3",
@@ -6164,7 +6067,6 @@
                   "id": 1603,
                   "mutability": "mutable",
                   "name": "_shares",
-                  "nameLocation": "4886:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4878:15:3",
@@ -6191,7 +6093,6 @@
                   "id": 1605,
                   "mutability": "mutable",
                   "name": "_minUnderlying",
-                  "nameLocation": "4912:14:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4904:22:3",
@@ -6225,7 +6126,6 @@
                   "id": 1609,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1619,
                   "src": "4959:7:3",
@@ -6258,7 +6158,7 @@
           },
           {
             "baseFunctions": [
-              3122
+              3123
             ],
             "body": {
               "id": 1668,
@@ -6275,7 +6175,6 @@
                       "id": 1635,
                       "mutability": "mutable",
                       "name": "oneUnit",
-                      "nameLocation": "5737:7:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "5729:15:3",
@@ -6332,7 +6231,7 @@
                       "name": "decimals",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3890,
+                      "referencedDeclaration": 3891,
                       "src": "5751:8:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
@@ -6358,7 +6257,6 @@
                       "id": 1641,
                       "mutability": "mutable",
                       "name": "underlyingPerShare",
-                      "nameLocation": "5778:18:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "5770:26:3",
@@ -6443,7 +6341,6 @@
                       "id": 1647,
                       "mutability": "mutable",
                       "name": "shares",
-                      "nameLocation": "5897:6:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "5889:14:3",
@@ -6568,7 +6465,6 @@
                       "id": 1656,
                       "mutability": "mutable",
                       "name": "underlyingReceived",
-                      "nameLocation": "6025:18:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1668,
                       "src": "6017:26:3",
@@ -6751,7 +6647,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "withdrawUnderlying",
-            "nameLocation": "5471:18:3",
             "nodeType": "FunctionDefinition",
             "overrides": {
               "id": 1628,
@@ -6768,7 +6663,6 @@
                   "id": 1622,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "5508:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5500:20:3",
@@ -6796,7 +6690,6 @@
                   "id": 1624,
                   "mutability": "mutable",
                   "name": "_amount",
-                  "nameLocation": "5539:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5531:15:3",
@@ -6823,7 +6716,6 @@
                   "id": 1626,
                   "mutability": "mutable",
                   "name": "_minUnderlying",
-                  "nameLocation": "5565:14:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5557:22:3",
@@ -6857,7 +6749,6 @@
                   "id": 1630,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5614:7:3",
@@ -6884,7 +6775,6 @@
                   "id": 1632,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1669,
                   "src": "5623:7:3",
@@ -6930,7 +6820,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": -15,
+                          "referencedDeclaration": 4294967281,
                           "src": "6982:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -6978,7 +6868,7 @@
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4167,
+                      "referencedDeclaration": 4168,
                       "src": "6976:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -7014,7 +6904,6 @@
                       "id": 1690,
                       "mutability": "mutable",
                       "name": "withdrawAmount",
-                      "nameLocation": "7076:14:3",
                       "nodeType": "VariableDeclaration",
                       "scope": 1706,
                       "src": "7068:22:3",
@@ -7198,10 +7087,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        -18,
-                        -18
+                        4294967278,
+                        4294967278
                       ],
-                      "referencedDeclaration": -18,
+                      "referencedDeclaration": 4294967278,
                       "src": "7341:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7258,7 +7147,6 @@
             "kind": "function",
             "modifiers": [],
             "name": "_positionWithdraw",
-            "nameLocation": "6755:17:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1679,
@@ -7269,7 +7157,6 @@
                   "id": 1672,
                   "mutability": "mutable",
                   "name": "_destination",
-                  "nameLocation": "6791:12:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6783:20:3",
@@ -7297,7 +7184,6 @@
                   "id": 1674,
                   "mutability": "mutable",
                   "name": "_shares",
-                  "nameLocation": "6822:7:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6814:15:3",
@@ -7324,7 +7210,6 @@
                   "id": 1676,
                   "mutability": "mutable",
                   "name": "_minUnderlying",
-                  "nameLocation": "6848:14:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6840:22:3",
@@ -7351,7 +7236,6 @@
                   "id": 1678,
                   "mutability": "mutable",
                   "name": "_underlyingPerShare",
-                  "nameLocation": "6881:19:3",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6873:27:3",
@@ -7385,7 +7269,6 @@
                   "id": 1681,
                   "mutability": "mutable",
                   "name": "",
-                  "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 1707,
                   "src": "6926:7:3",
@@ -7418,19 +7301,18 @@
           }
         ],
         "scope": 1709,
-        "src": "287:7163:3",
-        "usedErrors": []
+        "src": "287:7163:3"
       }
     ],
     "src": "40:7410:3"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.7+commit.e28d00a7.Linux.g++"
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-08-18T09:57:14.983Z",
+  "updatedAt": "2021-08-29T16:25:51.916Z",
   "devdoc": {
     "author": "Element Finance",
     "kind": "dev",
