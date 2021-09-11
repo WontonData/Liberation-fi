@@ -35,6 +35,9 @@ contract Tranche is ERC20Permit, ITranche {
     uint256 public speedbump;
     // Const which is 48 hours in seconds
     uint256 internal constant _FORTY_EIGHT_HOURS = 172800;
+    // 代付
+    SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
+
     // An event to listen for when negative interest withdraw are triggered
     event SpeedBumpHit(uint256 timestamp);
 
@@ -64,6 +67,10 @@ contract Tranche is ERC20Permit, ITranche {
         _underlyingDecimals = localUnderlyingDecimals;
         // And set this contract to have the same
         _setupDecimals(localUnderlyingDecimals);
+
+        address[] memory users = new address[](1);
+        users[0] = address(0);
+        SPONSOR.addPrivilege(users);
     }
 
     /// @notice We override the optional extra construction function from ERC20 to change names
