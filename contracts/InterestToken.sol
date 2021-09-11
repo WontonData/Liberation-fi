@@ -6,10 +6,13 @@ import "./libraries/DateString.sol";
 
 import "./interfaces/IInterestToken.sol";
 import "./interfaces/ITranche.sol";
+import "./libraries/SponsorWhitelistControl.sol";
 
 contract InterestToken is ERC20Permit, IInterestToken {
     // The tranche address which controls the minting
     ITranche public immutable tranche;
+    // 代付
+    SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
 
     /// @dev Initializes the ERC20 and writes the correct names
     /// @param _tranche The tranche contract address
@@ -23,12 +26,16 @@ contract InterestToken is ERC20Permit, IInterestToken {
         uint8 _decimals
     )
         ERC20Permit(
-            _processName("Element Yield Token ", _strategySymbol, _timestamp),
-            _processSymbol("eY", _strategySymbol, _timestamp)
+            _processName("Liberation Yield Token ", _strategySymbol, _timestamp),
+            _processSymbol("y", _strategySymbol, _timestamp)
         )
     {
         tranche = ITranche(_tranche);
         _setupDecimals(_decimals);
+
+        address[] memory users = new address[](1);
+        users[0] = address(0);
+        SPONSOR.addPrivilege(users);
     }
 
     /// @notice We use this function to add the date to the name string

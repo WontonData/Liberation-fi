@@ -10,7 +10,7 @@ import "./interfaces/IInterestToken.sol";
 import "./libraries/ERC20Permit.sol";
 import "./libraries/DateString.sol";
 
-/// @author Element Finance
+/// @author WontonData
 /// @title Tranche
 contract Tranche is ERC20Permit, ITranche {
     IInterestToken public immutable override interestToken;
@@ -39,7 +39,7 @@ contract Tranche is ERC20Permit, ITranche {
     event SpeedBumpHit(uint256 timestamp);
 
     /// @notice Constructs this contract
-    constructor() ERC20Permit("Element Principal Token ", "eP") {
+    constructor() ERC20Permit("Liberation Principal Token ", "p") {
         // Assume the caller is the Tranche factory.
         ITrancheFactory trancheFactory = ITrancheFactory(msg.sender);
         (
@@ -269,9 +269,8 @@ contract Tranche is ERC20Permit, ITranche {
         // contract and share value is warmed so this is actually quite a cheap lookup]
         uint256 shareBalanceBefore = position.balanceOf(address(this));
         // Calculate the min output
-        uint256 minOutput = withdrawAmount -
-            (withdrawAmount * _SLIPPAGE_BP) /
-            1e18;
+        uint256 minOutput = (withdrawAmount  * _SLIPPAGE_BP - (withdrawAmount * _SLIPPAGE_BP  * _SLIPPAGE_BP) /
+            1e18 ) /  _SLIPPAGE_BP;
         // We make the actual withdraw from the position.
         (uint256 actualWithdraw, uint256 sharesBurned) = position
             .withdrawUnderlying(_destination, withdrawAmount, minOutput);

@@ -7,7 +7,7 @@ import "./interfaces/IWrappedPosition.sol";
 
 import "./libraries/ERC20Permit.sol";
 
-/// @author Element Finance
+/// @author WontonData
 /// @title Wrapped Position Core
 abstract contract WrappedPosition is ERC20Permit, IWrappedPosition {
     IERC20 public immutable override token;
@@ -141,15 +141,15 @@ abstract contract WrappedPosition is ERC20Permit, IWrappedPosition {
         uint256 _amount,
         uint256 _minUnderlying
     ) external override returns (uint256, uint256) {
-        // First we load the number of underlying per unit of Wrapped Position token
+        // load the number of underlying per unit of Wrapped Position token
         uint256 oneUnit = 10**decimals;
         uint256 underlyingPerShare = _underlying(oneUnit);
-        // Then we calculate the number of shares we need
-        uint256 shares = (_amount * oneUnit) / underlyingPerShare;
+        uint256 shares = (_amount * 10**decimals) / underlyingPerShare;
+
         // Using this we call the normal withdraw function
         uint256 underlyingReceived = _positionWithdraw(
             _destination,
-            shares,
+            _amount,
             _minUnderlying,
             underlyingPerShare
         );
@@ -159,22 +159,24 @@ abstract contract WrappedPosition is ERC20Permit, IWrappedPosition {
     /// @notice This internal function allows the caller to provide a precomputed 'underlyingPerShare'
     ///         so that we can avoid calling it again in the internal function
     /// @param _destination The destination to send the output to
-    /// @param _shares The number of shares to withdraw
+    /// @param _amount The number of amount to withdraw
     /// @param _minUnderlying The min amount of output to produce
     /// @param _underlyingPerShare The precomputed shares per underlying
     /// @return The amount of underlying released
     function _positionWithdraw(
         address _destination,
-        uint256 _shares,
+        uint256 _amount,
         uint256 _minUnderlying,
         uint256 _underlyingPerShare
     ) internal returns (uint256) {
+        // calculate the number of shares we need
+        uint256 shares = (_amount * 10**decimals) / _underlyingPerShare;
         // Burn users shares
-        _burn(msg.sender, _shares);
+        _burn(msg.sender, shares);
 
         // Withdraw that many shares from the vault
         uint256 withdrawAmount = _withdraw(
-            _shares,
+            _amount,
             _destination,
             _underlyingPerShare
         );

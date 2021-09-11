@@ -8,7 +8,7 @@ import "../interfaces/IInterestToken.sol";
 
 pragma solidity ^0.8.0;
 
-/// @author Element Finance
+/// @author WontonData
 /// @title Tranche Factory
 contract TrancheFactory {
     /// @dev An event to track tranche creations
@@ -36,6 +36,16 @@ contract TrancheFactory {
     constructor(address _factory, address dateLibrary) {
         _interestTokenFactory = IInterestTokenFactory(_factory);
         _dateLibrary = dateLibrary;
+    }
+    function  _salt2(uint256 _expiration, address _wpAddress)public view returns(bytes memory){
+        
+        bytes memory salt = abi.encodePacked(_wpAddress, _expiration);
+        return salt;
+    }
+    function _salt(uint256 _expiration, address _wpAddress)public view returns(bytes32){
+        
+        bytes32 salt = keccak256(abi.encodePacked(_wpAddress, _expiration));
+        return salt;
     }
 
     /// @notice Deploy a new Tranche contract.

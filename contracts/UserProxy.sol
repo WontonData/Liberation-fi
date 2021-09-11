@@ -9,7 +9,7 @@ import "./interfaces/IWrappedPosition.sol";
 import "./libraries/Authorizable.sol";
 import "./libraries/SponsorWhitelistControl.sol";
 
-/// @author Element Finance
+/// @author WontonData
 /// @title User Proxy
 contract UserProxy is Authorizable {
     // This contract is a convenience library to consolidate
