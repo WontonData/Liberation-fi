@@ -10,3 +10,5 @@ Liberation Finance fork了Element Finance，是一款基于conflux公有链开�
 由于 Yield 代币具有流动性和可交易性，用户有能力获得更高的可变利息敞口。1 ETH 的 20% APY 的收益率代币将每年支付 0.2 ETH。
 用户可以选择在到期前购买大量的收益代币，并赚取在该期限内产生的剩余可变利息。 通过执行此操作，用户有助于卖方退出流动性，以当前累积收益率的形式确认其收益。
 <img width="974" alt="截屏2021-09-12 下午4 27 41" src="https://user-images.githubusercontent.com/69617011/132979568-b9965493-dcc8-446c-87f7-3b26e6b79b5c.png">
+
+
