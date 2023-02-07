@@ -1,4 +1,7 @@
 # Liberation-fi
+## Vedio Link
+https://drive.google.com/file/d/1tKe-4igbDPI3BvfuSU-xd3VOqgierOvy/view?usp=share_link
+
 Liberation Finance fork了Element Finance，是一款基于conflux公有链开发的让用户能够在 DeFi 市场中寻求高固定利率收益的协议。用户可以通过协议铸造主体代币和收益代币，通过引入时间变量的AMM，用户可以随时以折扣价购买与出售主体代币和收益代币，无视锁定期限。
 <img width="830" alt="截屏2021-09-12 下午4 26 31" src="https://user-images.githubusercontent.com/69617011/132979541-a9c36c56-2cce-427d-9c8f-1c85595ee324.png">
 
